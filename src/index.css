@@ -1,0 +1,98 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Theme (Default) */
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* white */
+    --foreground: 240 10% 3.9%; /* dark gray */
+    --card: 0 0% 100%; /* white */
+    --card-foreground: 240 10% 3.9%; /* dark gray */
+    --popover: 0 0% 100%; /* white */
+    --popover-foreground: 240 10% 3.9%; /* dark gray */
+    --primary: 180 60% 45%; /* teal/blue from logo */
+    --primary-foreground: 0 0% 100%; /* white */
+    --secondary: 240 4.8% 95.9%; /* light gray */
+    --secondary-foreground: 240 5.9% 10%; /* dark gray */
+    --muted: 240 4.8% 95.9%; /* light gray */
+    --muted-foreground: 240 3.8% 46.1%; /* medium gray */
+    --accent: 240 4.8% 95.9%; /* light gray */
+    --accent-foreground: 240 5.9% 10%; /* dark gray */
+    --destructive: 0 84.2% 60.2%; /* red */
+    --destructive-foreground: 0 0% 98%; /* light gray */
+    --border: 240 5.9% 90%; /* light gray border */
+    --input: 240 5.9% 90%; /* light gray input */
+    --ring: 180 60% 45%; /* teal/blue focus ring */
+    --radius: 0.5rem;
+  }
+
+  /* Optional: Dark Theme (if needed later, keep variables defined) */
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 180 55% 55%; /* Lighter teal/blue for dark mode */
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 180 55% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust based on fixed header height */
+  }
+  section {
+     @apply py-16 md:py-24;
+  }
+}
+
+/* Custom Button Styles */
+.button-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90 shadow;
+}
+
+.button-secondary {
+   @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm;
+}
+
+.button-outline {
+  @apply border border-primary text-primary hover:bg-primary/10 shadow-sm;
+}
+
+/* Feature Card Hover Effect */
+.feature-card {
+  transition: all 0.3s ease-in-out;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  @apply shadow-xl bg-card;
+}
+
+/* QR Code Styling */
+.qr-code-container {
+  @apply p-4 bg-white rounded-lg shadow-md inline-block;
+}
+  
