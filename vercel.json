@@ -1,9 +1,5 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/folcon",
-      "permanent": true
-    }
+  "rewrites": [
+    { "source": "/folcon/:path*", "destination": "/:path*" }
   ]
 }
