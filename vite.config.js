@@ -1,5 +1,5 @@
-import path from 'node:path';
 import react from '@vitejs/plugin-react';
+import path from 'node:path';
 import { defineConfig } from 'vite';
 
 const configHorizonsViteErrorHandler = `
@@ -185,4 +185,5 @@ export default defineConfig({
 			'@': path.resolve(__dirname, './src'),
 		},
 	},
+  base: '/folcon/'
 });
