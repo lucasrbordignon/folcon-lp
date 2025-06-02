@@ -185,5 +185,5 @@ export default defineConfig({
 			'@': path.resolve(__dirname, './src'),
 		},
 	},
-  base: '/folcon/'
+  base: '/folcon'
 });
