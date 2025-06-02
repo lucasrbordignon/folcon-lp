@@ -187,6 +187,6 @@ export default defineConfig({
 	},
   base: '/folcon/',
 	build: {
-		outDir: 'dist'
+		outDir: 'dist/folcon'
 	},
 });
