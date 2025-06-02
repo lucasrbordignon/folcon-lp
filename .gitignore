@@ -1,2 +1,15 @@
+# Node.js
 node_modules/
-# Ignore build output
+dist/
+.vscode/
+.env
+.DS_Store
+*.log
+
+# Build outputs
+build/
+out/
+
+# System files
+Thumbs.db
+*.swp
