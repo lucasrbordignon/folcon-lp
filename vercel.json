@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/folcon(/.*)?",
-      "destination": "https://folcon.vercel.app$1"
+      "source": "/",
+      "destination": "/folcon",
+      "permanent": true
     }
   ]
 }
